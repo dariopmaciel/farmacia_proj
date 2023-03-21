@@ -10,10 +10,25 @@ class SplashPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
-        child: Column(
+      body: ColoredBox(
+        color: Colors.white,
+        child: Stack(
           children: [
-            
+            Padding(
+              padding: const EdgeInsets.all(30.0),
+              child: Align(
+                alignment: Alignment.center,
+                child: SizedBox(
+                  width: context.percentWidth(1),
+                  height: context.percentHeight(1),
+                  child: Image.asset(
+                    "assets/images/farmacia_logo.png",
+                    fit: BoxFit.contain,
+                  ),
+                ),
+              ),
+            ),
+             
           ],
         ),
       ),
