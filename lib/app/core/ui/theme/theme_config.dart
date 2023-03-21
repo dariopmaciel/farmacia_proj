@@ -1,9 +1,15 @@
 import 'package:farmacia_proj/app/core/ui/styles/colors_app.dart';
 import 'package:farmacia_proj/app/core/ui/styles/styles_app.dart';
+import 'package:farmacia_proj/app/core/ui/styles/text_styles.dart';
 import 'package:flutter/material.dart';
 
 class ThemeConfig {
   ThemeConfig._();
+
+  static final _defaultInputBorder = OutlineInputBorder(
+    borderRadius: BorderRadius.circular(10),
+    borderSide: const BorderSide(color: Colors.grey),
+  );
 
   static final theme = ThemeData(
     scaffoldBackgroundColor: Colors.white,
@@ -25,10 +31,11 @@ class ThemeConfig {
       filled: true,
       isDense: true,
       contentPadding: const EdgeInsets.all(12),
-      border: OutlineInputBorder(
-        borderRadius: BorderRadius.circular(10),
-        borderSide: const BorderSide(color: Colors.grey),
-      ),
+      border: _defaultInputBorder,
+      enabledBorder: _defaultInputBorder,
+      focusedBorder: _defaultInputBorder,
+      labelStyle: TextStyles.i.textRegular.copyWith(color: Colors.black),
+      errorStyle: TextStyles.i.textRegular.copyWith(color: Colors.red),
     ),
   );
 }
