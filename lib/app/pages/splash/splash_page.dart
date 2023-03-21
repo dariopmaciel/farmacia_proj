@@ -23,7 +23,10 @@ class SplashPage extends StatelessWidget {
       ),
       child: Scaffold(
         appBar: AppBar(title: const Text('Splash Page')),
-        body: Container(),
+        body: Center(
+            child: Container(
+          child: ElevatedButton(onPressed: () {}, child: Text("COLOR")),
+        )),
       ),
     );
   }
