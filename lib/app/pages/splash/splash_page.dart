@@ -1,11 +1,41 @@
+import 'dart:async';
+
 import 'package:farmacia_proj/app/core/ui/helpers/size_extensions.dart';
 import 'package:farmacia_proj/app/core/ui/styles/colors_app.dart';
 import 'package:farmacia_proj/app/core/ui/styles/styles_app.dart';
 import 'package:farmacia_proj/app/core/ui/widget/confirmation_button.dart';
+import 'package:farmacia_proj/app/pages/home/home_page.dart';
 import 'package:flutter/material.dart';
+import 'package:page_transition/page_transition.dart';
 
-class SplashPage extends StatelessWidget {
+class SplashPage extends StatefulWidget {
   const SplashPage({super.key});
+
+  @override
+  State<SplashPage> createState() => _SplashPageState();
+}
+
+class _SplashPageState extends State<SplashPage> {
+  @override
+  void initState() {
+    _next();
+    super.initState();
+  }
+
+  _next() {
+    Timer(
+      Duration(milliseconds: 3000),
+      () {
+        Navigator.push(
+          context,
+          PageTransition(
+            child: const HomePage(),
+            type: PageTransitionType.rightToLeft,
+          ),
+        );
+      },
+    );
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -28,7 +58,6 @@ class SplashPage extends StatelessWidget {
                 ),
               ),
             ),
-             
           ],
         ),
       ),

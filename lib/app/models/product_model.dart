@@ -1,17 +1,16 @@
-import 'dart:convert';
-
 // ignore_for_file: public_member_api_docs, sort_constructors_first
+import 'dart:convert';
 
 class ProductModel {
   final int id;
   final String name;
   final String tipo;
-  final String qtd;
+  final int qtd;
   final String fabricante;
   final String bula;
   final double price;
   final String image;
-
+  
   ProductModel({
     required this.id,
     required this.name,
@@ -41,7 +40,7 @@ class ProductModel {
       id: map['id'] as int,
       name: map['name'] as String,
       tipo: map['tipo'] as String,
-      qtd: map['qtd'] as String,
+      qtd: map['qtd'] as int,
       fabricante: map['fabricante'] as String,
       bula: map['bula'] as String,
       price: map['price'] as double,
@@ -58,7 +57,7 @@ class ProductModel {
     int? id,
     String? name,
     String? tipo,
-    String? qtd,
+    int? qtd,
     String? fabricante,
     String? bula,
     double? price,
