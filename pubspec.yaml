@@ -62,13 +62,19 @@ dev_dependencies:
 flutter:
 
   # The following line ensures that the Material Icons font is
-  # included with your application, so that you can use the icons in
+  # included with your application, so that you can use the logo NatZ aromasicons in
   # the material Icons class.
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
   assets:
-    - assets/images/
+    - assets/images/LifeCare.png
+    - assets/images/Sono.png
+    - assets/images/Beleza.png
+    - assets/images/Natz.png
+    - assets/images/Baby.png
+    - assets/images/Nutri.png
+    - assets/images/gym.png
     - assets/icons/
   #   - images/a_dot_ham.jpeg
 
