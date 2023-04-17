@@ -76,6 +76,8 @@ flutter:
     - assets/images/Nutri.png
     - assets/images/gym.png
     - assets/icons/
+    - assets/images/farmacia_logo.png
+    - assets/images/SeuLogoAqui.png
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

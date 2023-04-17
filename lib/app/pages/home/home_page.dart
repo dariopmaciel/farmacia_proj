@@ -54,12 +54,12 @@ class _HomePageState extends State<HomePage> {
             UserAccountsDrawerHeader(
               accountName: Text("Usuário: $nome"),
               accountEmail: Text("E-mail: $email"),
-              decoration: BoxDecoration(color: Colors.white),
+              decoration: const BoxDecoration(color: Colors.white),
               // currentAccountPicture:
               //     Image.asset("assets/images/MultiComp-LOGO.png"),
             ),
             SingleChildScrollView(
-              padding: EdgeInsets.only(left: 10),
+              padding: const EdgeInsets.only(left: 10),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
