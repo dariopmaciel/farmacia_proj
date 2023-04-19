@@ -38,7 +38,7 @@ class _HomePageState extends State<HomePage> {
           IconButton(
             onPressed: () {
               //
-              // SACOLA DE COMPRAS
+
               //
             },
             icon: const Icon(
@@ -162,17 +162,17 @@ class _HomePageState extends State<HomePage> {
                 height: context.percentHeight(0.1),
                 decoration: BoxDecoration(
                   //color: Colors.white,
-                  color: Color(0xffF0EAEA),
+                  color: const Color(0xffF0EAEA),
                   borderRadius: BorderRadius.circular(10),
                 ),
-                child: ProductsClass(),
+                child: const ProductsClass(),
               ),
             ),
             SingleChildScrollView(
               child: Container(
                 height: context.percentHeight(0.6),
                 decoration: BoxDecoration(
-                  color: Color(0xffF0EAEA),
+                  color: const Color(0xffF0EAEA),
                   borderRadius: BorderRadius.circular(10),
                 ),
                 child: Column(

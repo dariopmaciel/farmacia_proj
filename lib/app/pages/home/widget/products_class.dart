@@ -31,7 +31,9 @@ class _ProductsClassState extends State<ProductsClass> {
             },
             child: CategoryItem(
               name: name[index],
-              color: _selectedIndex == index ? Color(0xffF2B2C9) : Colors.white,
+              color: _selectedIndex == index
+                  ? const Color(0xffF2B2C9)
+                  : Colors.white,
               // backgroundColor:
               //     _selectedIndex == index ? Color(0xffF2B2C9) : Colors.white,
               // : const Color(0xfff2e3db),
@@ -70,11 +72,11 @@ class CategoryItem extends StatelessWidget {
           Container(
             width: context.percentWidth(0.12),
             height: context.percentHeight(0.06),
-            child: icon,
             decoration: BoxDecoration(
                 color: color, borderRadius: BorderRadius.circular(10)),
+            child: icon,
           ),
-          SizedBox(height: 8),
+          const SizedBox(height: 8),
           Text(name, style: context.textStyles.textBold.copyWith(fontSize: 12)),
         ],
       ),
